@@ -1,0 +1,22 @@
+{
+  "name": "basic-queue",
+  "version": "0.0.0",
+  "description": "a basic queue with concurrency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mapbox/basic-queue.git"
+  },
+  "keywords": [
+    "queue",
+    "concurrency"
+  ],
+  "author": "Konstatin Kaefer",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/mapbox/basic-queue/issues"
+  }
+}
