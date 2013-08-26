@@ -4,7 +4,7 @@
   "description": "a basic queue with concurrency",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -14,9 +14,12 @@
     "queue",
     "concurrency"
   ],
-  "author": "Konstatin Kaefer",
+  "author": "Konstantin Kaefer",
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/mapbox/basic-queue/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0"
   }
 }
