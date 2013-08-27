@@ -30,6 +30,7 @@ Queue.prototype.invoke = function() {
 };
 
 Queue.prototype.next = function(err) {
+    if (err) this.emit('error', err);
     if (this.queue.length) {
         process.nextTick(this.invoke);
     } else {

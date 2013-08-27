@@ -26,4 +26,13 @@ describe('queue', function() {
             q.add('foo');
         });
     });
+    describe('on error', function() {
+        it('should be invoked when task passes an err into callback', function(done) {
+            var q = new Queue(function(obj, callback) { callback(new Error('dummy')) }, 3);
+            q.on('error', function() {
+                done();
+            });
+            q.add('foo');
+        });
+    });
 });
