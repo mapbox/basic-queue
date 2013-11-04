@@ -3,7 +3,7 @@
 ## example
 
 ```js
-var Queue = require('./queue');
+var Queue = require('basic-queue');
 var q = new Queue(request, concurrency / numWorkers);
 
 function request() {
