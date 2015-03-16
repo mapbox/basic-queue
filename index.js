@@ -21,6 +21,19 @@ Queue.prototype.add = function(item) {
     }
 };
 
+Queue.prototype.addMultiple = function(items) {
+    this.queue = this.queue.concat(items);
+
+    var space = this.concurrency - this.running,
+        additional = space < this.queue.length ? space : this.queue.length;
+
+    while(additional > 0) {
+        this.running++;
+        this.next();
+        additional--;
+    }
+};
+
 Queue.prototype.invoke = function() {
     if (this.queue.length) {
         this.callback(this.queue.shift(), this.next);
