@@ -30,7 +30,7 @@ Indicates that there is no work left in the queue.
 
 ```js
 var request = require('request');
-var Queue = require('basic-queue');
+var Queue = require('@mapbox/basic-queue');
 var q = new Queue(scrape, 2);
 
 function scrape(url, callback) {
