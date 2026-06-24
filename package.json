@@ -1,25 +1,28 @@
 {
-  "license": "BSD-2-Clause", 
-  "name": "@mapbox/basic-queue", 
+  "license": "BSD-2-Clause",
+  "name": "@mapbox/basic-queue",
   "repository": {
-    "url": "git@github.com:mapbox/basic-queue.git", 
+    "url": "git@github.com:mapbox/basic-queue.git",
     "type": "git"
-  }, 
-  "author": "Konstantin Kaefer", 
+  },
+  "author": "Konstantin Kaefer",
   "bugs": {
     "url": "https://github.com/mapbox/basic-queue/issues"
-  }, 
-  "version": "1.0.1", 
+  },
+  "version": "1.0.2",
   "scripts": {
     "test": "mocha"
-  }, 
+  },
   "keywords": [
-    "queue", 
+    "queue",
     "concurrency"
-  ], 
+  ],
   "devDependencies": {
     "mocha": "~1.12.0"
-  }, 
-  "main": "index.js", 
-  "description": "a basic queue with concurrency"
+  },
+  "main": "index.js",
+  "description": "a basic queue with concurrency",
+  "publishConfig": {
+    "access": "public"
+  }
 }
